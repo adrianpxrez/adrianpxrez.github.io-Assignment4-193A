@@ -10,8 +10,26 @@
 	<body>
 		<h1>Fancify my Text</h1>
 		
+		<fieldset>
+		<legend>Text</legend>
+		<textarea id="textBox" rows="4" cols="30"></textarea>
+	</fieldset>
+	<fieldset>
+			<legend>Fancify</legend>
 
-		<!-- Your UI controls go here -->
-		
+			<button onclick="makeBigger()">Bigger!</button>
+
+			<br><br>
+
+			<input type="radio" id="fancy" name="style" onchange="changeStyle()">
+			<label for="fancy">FancyShmancy</label>
+
+			<input type="radio" id="boring" name="style" onchange="changeStyle()">
+			<label for="boring">BoringBetty</label>
+
+			<br><br>
+
+			<button onclick="mooText()">Moo</button>
+		</fieldset>
 	</body>
 </html>
